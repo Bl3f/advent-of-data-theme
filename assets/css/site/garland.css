@@ -20,9 +20,9 @@ ul.garland li {
     height: 30px;
     border-radius: 70%;
     margin-bottom: 100px;
+    background: #444444;
 
-    animation-name: light_up;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -30,6 +30,7 @@ ul.garland li {
 ul.garland li span {
     border-bottom-width: 2px;
     border-bottom-style: solid;
+    border-bottom-color: #444444;
     border-radius: 50%;
     display: inline-block;
     height: 5px;
@@ -39,8 +40,7 @@ ul.garland li span {
     width: 20px;
     left: -5px;
 
-    animation-name: light_up_second;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -71,115 +71,85 @@ ul.garland:after {
 }
 
 ul.garland li {
+    animation-delay: 0.5s;
+    animation-name: light_up_yellow;
     transform: rotate(5deg);
 }
 
+ul.garland li span {
+    animation-delay: 0.5s;
+    animation-name: light_up_second_yellow;
+}
+
 ul.garland li:nth-child(2n) {
+    animation-delay: 1.2s;
+    animation-name: light_up_green;
     transform: rotate(-7deg);
 }
 
+ul.garland li:nth-child(2n) span {
+    animation-delay: 1.2s;
+    animation-name: light_up_second_green;
+}
+
 ul.garland li:nth-child(3n) {
+    animation-delay: .9s;
+    animation-name: light_up_red;
     transform: rotate(3deg);
 }
 
+ul.garland li:nth-child(3n) span {
+    animation-delay: .9s;
+    animation-name: light_up_second_red;
+}
+
 ul.garland li:nth-child(4n) {
+    animation-name: light_up_yellow;
     transform: rotate(-10deg);
 }
 
+ul.garland li:nth-child(4n) span {
+    animation-name: light_up_second_yellow;
+}
+
 ul.garland li:nth-child(5n) {
+    animation-name: light_up_green;
     transform: rotate(-6deg);
 }
 
+ul.garland li:nth-child(5n) span {
+    animation-name: light_up_second_green;
+}
+
 ul.garland li:nth-child(6n) {
+    animation-name: light_up_yellow;
     transform: rotate(6deg);
 }
 
-@keyframes light_up {
-    0% {
-        background: #444444;
-    }
-    60% {
-        background: #444444;
-    }
-    80% {
-        background: #FFAC00;
-    }
-    100% {
-        background: #444444;
-    }
+ul.garland li:nth-child(6n) span {
+    animation-name: light_up_second_yellow;
 }
 
-@-webkit-keyframes light_up {
-    0% {
-        background: #444444;
-    }
-    60% {
-        background: #444444;
-    }
-    80% {
-        background: #FFAC00;
-    }
-    100% {
-        background: #444444;
-    }
-}
+@keyframes light_up_yellow { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #FFAC00;} 100% {background: #444444;} }
+@-webkit-keyframes light_up_yellow { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #FFAC00;} 100% {background: #444444;} }
+@-moz-keyframes light_up_yellow { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #FFAC00;} 100% {background: #444444;} }
 
-@-moz-keyframes light_up {
-    0% {
-        background: #444444;
-    }
-    60% {
-        background: #444444;
-    }
-    80% {
-        background: #FFAC00;
-    }
-    100% {
-        background: #444444;
-    }
-}
+@keyframes light_up_second_yellow { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #fddd01;} 100% {border-bottom-color: #444444;} }
+@-webkit-keyframes light_up_second_yellow { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #fddd01;} 100% {border-bottom-color: #444444;} }
+@-moz-keyframes light_up_second_yellow { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #fddd01;} 100% {border-bottom-color: #444444;} }
 
-@keyframes light_up_second {
-    0% {
-        border-bottom-color: #444444;
-    }
-    60% {
-        border-bottom-color: #444444;
-    }
-    80% {
-        border-bottom-color: #fddd01;
-    }
-    100% {
-        border-bottom-color: #444444;
-    }
-}
+@keyframes light_up_green { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #06AB03;} 100% {background: #444444;} }
+@-webkit-keyframes light_up_green { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #06AB03;} 100% {background: #444444;} }
+@-moz-keyframes light_up_green { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #06AB03;} 100% {background: #444444;} }
 
-@-webkit-keyframes light_up_second {
-    0% {
-        border-bottom-color: #444444;
-    }
-    60% {
-        border-bottom-color: #444444;
-    }
-    80% {
-        border-bottom-color: #fddd01;
-    }
-    100% {
-        border-bottom-color: #444444;
-    }
-}
+@keyframes light_up_second_green { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #07F304;} 100% {border-bottom-color: #444444;} }
+@-webkit-keyframes light_up_second_green { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #07F304;} 100% {border-bottom-color: #444444;} }
+@-moz-keyframes light_up_second_green { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #07F304;} 100% {border-bottom-color: #444444;} }
 
-@-moz-keyframes light_up_second {
-    0% {
-        border-bottom-color: #444444;
-    }
-    60% {
-        border-bottom-color: #444444;
-    }
-    80% {
-        border-bottom-color: #fddd01;
-    }
-    100% {
-        border-bottom-color: #444444;
-    }
-}
+@keyframes light_up_red { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #F40204;} 100% {background: #444444;} }
+@-webkit-keyframes light_up_red { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #F40204;} 100% {background: #444444;} }
+@-moz-keyframes light_up_red { 0% {background: #444444;} 60% {background: #444444;} 80% {background: #F40204;} 100% {background: #444444;} }
+
+@keyframes light_up_second_red { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #F43384;} 100% {border-bottom-color: #444444;} }
+@-webkit-keyframes light_up_second_red { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #F43384;} 100% {border-bottom-color: #444444;} }
+@-moz-keyframes light_up_second_red { 0% {border-bottom-color: #444444;} 60% {border-bottom-color: #444444;} 80% {border-bottom-color: #F43384;} 100% {border-bottom-color: #444444;} }
