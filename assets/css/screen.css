@@ -4,9 +4,13 @@
 @import "general/button.css";
 @import "general/form.css";
 @import "general/icons.css";
+@import "site/variable.css";
 @import "site/layout.css";
 @import "site/header.css";
+@import "site/home.css";
 @import "site/cover.css";
+@import "site/footer.css";
+@import "site/garland.css";
 @import "blog/feed.css";
 @import "blog/featured.css";
 @import "blog/pagination.css";

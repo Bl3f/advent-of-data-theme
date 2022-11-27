@@ -2,12 +2,49 @@
 
 <main class="site-main">
 
-    <div class="post-feed gh-feed gh-canvas">
-        {{#foreach posts}}
-            {{> "loop"}}
-        {{/foreach}}
+    <div class="wrapper-garland">
+        <ul class="garland">
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+        </ul>
     </div>
 
-    {{pagination}}
-
+    <div class="days">
+        {{#get "posts" limit="all" include="tags,authors" order="published_at asc"}}
+            {{#foreach posts}}
+                <a class="postLink" href="{{url}}">
+                    <span class="day">
+                        <span class="id">{{#foreach tags visibility="internal"}}{{name}}{{/foreach}}</span>
+                        <span class="authors">{{#foreach authors}}{{name}}{{/foreach}}</span>
+                        <span class="sep">•</span>
+                        <h2 class="title">{{title}}</h2>
+                    </span>
+                    <span class="insideDay"></span>
+                </a>
+            {{/foreach}}
+        {{/get}}
+    </div>
 </main>
+
+<script type="module">
+    const numberOfPosts = {{posts.length}};
+    const missingCards = 24 - numberOfPosts;
+
+    $('.id').each(function() { const val = $(this).text(); $(this).text(val.replace("#", ""))});
+
+    for (const x of [...Array(missingCards).keys()].map(d => d + numberOfPosts + 1)) {
+      $('.days').append(`<div class="day empty"><div class="id">${String(x).padStart(2, '0')}</div></div>`)
+    }
+
+</script>
