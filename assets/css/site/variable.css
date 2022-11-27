@@ -1,0 +1,29 @@
+:root {
+  --columns: 6;
+  --column-width: 150px;
+  --column-space: 10px;
+}
+
+@media (max-width: 960px) {
+    :root {
+      --columns: 4;
+      --column-width: 150px;
+      --column-space: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+      --columns: 3;
+      --column-width: 150px;
+      --column-space: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+      --columns: 2;
+      --column-width: 150px;
+      --column-space: 10px;
+    }
+}

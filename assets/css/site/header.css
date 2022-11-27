@@ -1,3 +1,21 @@
+.gh-head h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.gh-head .year {
+    font-family: 'Roboto Mono', monospace;
+    color: #B08668;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    top: 30px;
+
+    transform: rotate(-20deg);
+}
+
 .gh-head-logo {
     font-size: 2.2rem;
     font-weight: 800;
@@ -14,5 +32,6 @@
 }
 
 .gh-head {
+    position: relative;
     margin: 40px auto 0 auto;
 }

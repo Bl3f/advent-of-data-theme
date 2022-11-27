@@ -1,0 +1,81 @@
+.days {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(var(--columns) * (var(--column-width) + var(--column-space)));
+    margin: auto;
+}
+
+.postLink {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.postLink:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.day {
+    display: inline-block;
+    position: relative;
+    z-index: 32;
+    width: var(--column-width);
+    margin: var(--column-space) var(--column-space) 0 0;
+    height: 200px;
+    background-color: #B08668;
+    padding: 10px;
+    color: var(--primary-text-color);
+
+    transform-origin: left;
+    /*Speed of the Door animation*/
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.insideDay {
+    display: inline-block;
+    position: absolute;
+    z-index: 16;
+    top: var(--column-space);
+    left: 0;
+    background-color: #452D3A;
+    width: var(--column-width);
+    height: 200px;
+}
+
+.day:not(.empty):hover {
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-40deg);
+}
+
+.day.empty {
+    background-color: #769599;
+}
+
+.day h2 {
+    display: inline-block;
+    font-size: 1em;
+}
+
+.id {
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.authors {
+    display: inline-block;
+    font-size: .7em;
+    width: 100%;
+    margin: 0;
+}
+
+.sep {
+    display: inline-block;
+    font-size: .5em;
+}
