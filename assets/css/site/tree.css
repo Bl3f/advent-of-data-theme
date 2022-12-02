@@ -1,0 +1,215 @@
+.gh-foot {
+    position: relative;
+}
+
+.tree {
+    position: absolute;
+    top: -190px;
+    right: 200px;
+}
+
+.tree .level-1 {
+    position: relative;
+    z-index: 128;
+
+}
+
+.tree .level-2 {
+    z-index: 64;
+    position: absolute;
+    top: 40px;
+    left: -20px;
+}
+
+.tree .level-3 {
+    z-index: 32;
+    position: absolute;
+    top: 86px;
+    left: -40px;
+}
+
+/* LEVEL 1 */
+/* ----------------------- */
+.tree .level-1 span {
+    display: inline-block;
+    position: absolute;
+    background: #2F7C4B;
+
+}
+
+.tree .level-1 span:nth-child(1) {
+    width: 100px;
+    height: 40px;
+    border-radius: 40%;
+
+    transform: rotate(-50deg);
+}
+
+.tree .level-1 span:nth-child(2) {
+    width: 80px;
+    height: 30px;
+    top: 15px;
+    left: 26px;
+    border-radius: 40%;
+
+    transform: rotate(100deg);
+}
+
+.tree .level-1 span:nth-child(3) {
+    width: 80px;
+    height: 30px;
+    top: 15px;
+    left: 46px;
+    border-radius: 40%;
+
+    transform: rotate(80deg);
+}
+
+.tree .level-1 span:nth-child(4) {
+    width: 100px;
+    left: 50px;
+    height: 40px;
+    border-radius: 40%;
+
+    transform: rotate(50deg);
+}
+
+/* LEVEL 2 */
+/* ----------------------- */
+.tree .level-2 span {
+    display: inline-block;
+    position: absolute;
+    background: #296C42;
+}
+
+.tree .level-2 span:nth-child(1) {
+    width: 140px;
+    height: 40px;
+    border-radius: 40%;
+
+    transform: rotate(-40deg);
+}
+
+.tree .level-2 span:nth-child(2) {
+    width: 100px;
+    height: 32px;
+    top: 15px;
+    left: 26px;
+    border-radius: 40%;
+
+    transform: rotate(120deg);
+}
+
+.tree .level-2 span:nth-child(3) {
+    width: 80px;
+    height: 30px;
+    top: 25px;
+    left: 53px;
+    border-radius: 40%;
+
+    transform: rotate(90deg);
+}
+
+.tree .level-2 span:nth-child(4) {
+    width: 100px;
+    left: 60px;
+    top: 15px;
+    height: 32px;
+    border-radius: 40%;
+
+    transform: rotate(-120deg);
+}
+
+.tree .level-2 span:nth-child(5) {
+    width: 140px;
+    left: 50px;
+    height: 40px;
+    border-radius: 40%;
+
+    transform: rotate(40deg);
+}
+
+/* LEVEL 3 */
+/* ----------------------- */
+.tree .level-3 span {
+    display: inline-block;
+    position: absolute;
+    background: #26633E;
+}
+
+.tree .level-3 span:nth-child(1) {
+    width: 140px;
+    height: 40px;
+    border-radius: 40%;
+
+    transform: rotate(-40deg);
+}
+
+.tree .level-3 span:nth-child(2) {
+    width: 100px;
+    height: 32px;
+    top: 15px;
+    left: 26px;
+    border-radius: 40%;
+
+    transform: rotate(120deg);
+}
+
+.tree .level-3 span:nth-child(3) {
+    width: 80px;
+    height: 30px;
+    top: 25px;
+    left: 53px;
+    border-radius: 40%;
+
+    transform: rotate(100deg);
+}
+
+.tree .level-3 span:nth-child(4) {
+    width: 100px;
+    left: 70px;
+    top: 15px;
+    height: 32px;
+    border-radius: 40%;
+
+    transform: rotate(90deg);
+}
+
+.tree .level-3 span:nth-child(5) {
+    width: 100px;
+    left: 90px;
+    top: 12px;
+    height: 32px;
+    border-radius: 40%;
+
+    transform: rotate(-100deg);
+}
+
+.tree .level-3 span:nth-child(6) {
+    width: 100px;
+    left: 110px;
+    top: 10px;
+    height: 32px;
+    border-radius: 40%;
+
+    transform: rotate(-110deg);
+}
+
+.tree .level-3 span:nth-child(7) {
+    width: 140px;
+    left: 90px;
+    height: 40px;
+    border-radius: 40%;
+
+    transform: rotate(40deg);
+}
+
+/* WOOD */
+.wood {
+    background: #5A3329;
+    position: absolute;
+    width: 30px;
+    height: 100px;
+    left: 60px;
+    top: 90px;
+}

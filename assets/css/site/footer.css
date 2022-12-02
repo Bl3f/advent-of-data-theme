@@ -15,7 +15,7 @@
     max-width: 60%;
 }
 
-ul {
+.gh-foot-inner ul {
     margin: 0;
     list-style: none;
     padding: 0 var(--column-space) 0 0;
