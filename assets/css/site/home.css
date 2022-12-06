@@ -23,7 +23,7 @@
     z-index: 32;
     width: var(--column-width);
     margin: var(--column-space) var(--column-space) 0 0;
-    height: 200px;
+    height: 230px;
     background-color: #B08668;
     padding: 10px;
     color: var(--primary-text-color);
