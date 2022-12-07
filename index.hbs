@@ -39,8 +39,12 @@
 </main>
 
 <script type="module">
-    const numberOfPosts = {{posts.length}};
+    {{#get "posts" limit="all"}}
+        const numberOfPosts = {{posts.length}};
+    {{/get}}
     const missingCards = 24 - numberOfPosts;
+
+    console.log(numberOfPosts, missingCards)
 
     $('.id').each(function() { const val = $(this).text(); $(this).text(val.replace("#", ""))});
 
