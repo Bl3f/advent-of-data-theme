@@ -27,9 +27,9 @@
                 <a class="postLink" href="{{url}}">
                     <span class="day">
                         <span class="id">{{#foreach tags visibility="internal"}}{{name}}{{/foreach}}</span>
-                        <span class="authors">{{#foreach authors}}{{name}}{{/foreach}}</span>
-                        <span class="sep">•</span>
                         <h2 class="title">{{title}}</h2>
+                        <span class="sep">—</span>
+                        <span class="authors">{{#foreach authors}}<p>{{name}}</p>{{/foreach}}</span>
                     </span>
                     <span class="insideDay"></span>
                 </a>
